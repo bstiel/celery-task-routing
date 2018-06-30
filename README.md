@@ -1,6 +1,6 @@
 # Unit Testing Celery Tasks
 
-This projects contains the source code examples accompanying the blog post: https://www.python-celery.com/2018/05/29/dynamic-task-routing/.
+This projects contains the source code examples accompanying the blog post: https://www.python-celery.com/2018/05/29/task-routing/.
 
 Docker is highly recommended.
 
