@@ -1,0 +1,5 @@
+celery==4.2.0
+flask==1.0.2
+freezegun==0.3.10
+pandas==0.23.1
+requests==2.19.1
