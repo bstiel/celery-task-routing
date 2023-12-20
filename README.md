@@ -1,16 +1,23 @@
-# Unit Testing Celery Tasks
+# Celery Task Routing
 
-This projects contains the source code examples accompanying the blog post: https://www.python-celery.com/2018/05/29/task-routing/.
+https://celery.school/celery-task-routing
 
-Docker is highly recommended.
+## Create and activate virtual environment
 
-1. Bring up the docker stack:
-```docker-compose up -d```
+```bash
+$ python -m venv venv
+$ source venv/bin/activate
+```
 
-2. Execute example.py in one of the app-image containers:
-```docker-compose exec worker-feeds pyton example.py --start_date=2018-01-01 --end_date=2018-05-29 --window=3```
+## Install requirements
 
+```bash
+$ pip install -r requirements.txt
+```
 
-If you run without docker, make sure you run the services
-specified in the docker-compose.yml file individually and
-adjust the environment variables, ports etc as required.
+## Start broker, producer, worker1 and worker2
+
+```bash
+$ docker compose up -d
+$ honcho start
+```
